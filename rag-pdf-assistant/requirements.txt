@@ -1,0 +1,10 @@
+langchain
+langchain-community
+faiss-cpu
+pypdf
+python-dotenv
+sentence-transformers #for local embedding generation
+
+#optional
+# fastapi
+# uvicorn
