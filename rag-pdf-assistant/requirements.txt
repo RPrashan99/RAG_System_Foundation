@@ -7,6 +7,7 @@ faiss-cpu
 pypdf
 python-dotenv
 sentence-transformers #for local embedding generation
+streamlit #for app
 
 #optional
 # fastapi

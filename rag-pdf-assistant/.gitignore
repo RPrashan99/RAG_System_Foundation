@@ -1,4 +1,5 @@
 data
 venv
 faiss_index
-*.txt
+documentation.txt
+issues.txt
