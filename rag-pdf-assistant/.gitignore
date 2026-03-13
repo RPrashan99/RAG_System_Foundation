@@ -3,3 +3,4 @@ venv
 faiss_index
 documentation.txt
 issues.txt
+test
