@@ -12,10 +12,18 @@ db = FAISS.load_local(
     allow_dangerous_deserialization=True
 )
 
-llm = OllamaLLM(model="llama3")
+try:
+    llm = OllamaLLM(model="llama3")
+except:
+    print("Model not available. Check ollama running.")
+
+print("---Multi document RAG System---\n")
 
 while True:
-    query = input("\nAsk: ")
+    query = input("\nAsk (Type 'q' to exit): ")
+
+    if(query.lower() == "q"):
+        break
 
     docs = db.similarity_search(query, k=6)
 
@@ -45,3 +53,5 @@ Answer clearly.
     print("\nSources:")
     for s in sources:
         print("-", s)
+
+print("\n--Multi document RAG Stopped--")
