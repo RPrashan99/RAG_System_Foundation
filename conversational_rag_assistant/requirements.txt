@@ -1,0 +1,14 @@
+langchain
+langchain-community
+langchain_text_splitters
+langchain-ollama
+langchain-huggingface
+faiss-cpu
+pypdf
+python-dotenv
+sentence-transformers #for local embedding generation
+streamlit #for app
+
+#optional
+# fastapi
+# uvicorn
