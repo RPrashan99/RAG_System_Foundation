@@ -57,7 +57,7 @@ while True:
         User Question:
         {query}
 
-        Answer clearly using the context.
+        Answer briefly and clearly using the context.
         """
     
     response = llm.invoke(prompt)
