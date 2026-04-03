@@ -1,0 +1,8 @@
+documentation.txt
+helpful.txt
+data/*
+__pycache__/
+*.pyc
+
+documents
+faiss_index
