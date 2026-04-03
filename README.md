@@ -25,7 +25,7 @@ source venv/bin/activate
 
 ### 2) Start Ollama (local LLM)
 
-Both projects rely on a locally running Ollama server.
+All projects rely on a locally running Ollama server.
 
 ```bash
 ollama server
@@ -58,7 +58,7 @@ Make sure you have a model (e.g. `llama3`) installed and available in Ollama.
 - **Query:** Run `app.py` to start the conversational chat interface.
 - **Chat utility:** `chat.py` contains low-level query/chat orchestration logic for reference or customization.
 
-### 4) `production_grade_retrieval_rag/`
+### 4) `production_grade_rag_assistant/`
 
 - **Purpose:** A production-grade RAG system using hybrid search (BM25 + FAISS) with cross-encoder reranking and query rewriting for improved retrieval accuracy.
 - **Methodology:** Query rewriting → Hybrid search (BM25 + vector) → Cross-encoder reranking → Answer generation.
