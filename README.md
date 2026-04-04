@@ -33,6 +33,30 @@ ollama server
 
 Make sure you have a model (e.g. `llama3`) installed and available in Ollama.
 
+### 3) Run ingest.py
+
+This creates the FAISS vector index from the PDF documents.
+
+```bash
+python ingest.py
+```
+
+Add readable documents to required directory (default: `documents`) before execute.
+
+### 4) Run query.py or app.py
+
+This will run the RAG assistant application. 
+
+Terminal view: application starts in the terminal itself.
+```bash
+python query.py
+```
+
+GUI view: application starts in the default web browser.
+```bash
+streamlit run app.py
+```
+
 ---
 
 ## 📦 Projects Overview
@@ -63,8 +87,8 @@ Make sure you have a model (e.g. `llama3`) installed and available in Ollama.
 - **Purpose:** A production-grade RAG system using hybrid search (BM25 + FAISS) with cross-encoder reranking and query rewriting for improved retrieval accuracy.
 - **Methodology:** Query rewriting → Hybrid search (BM25 + vector) → Cross-encoder reranking → Answer generation.
 - **Indexing:** Run `ingest.py` to process PDFs in `documents/`, create text chunks, build FAISS vector index, and save BM25 corpus to `data/bm25_corpus.json`.
-- **Query:** Run `query.py` to start the terminal-based conversational query interface.
-
+- **Query:** Run `query.py` or `query_restructured.py` to start the terminal-based conversational query interface.
+- **Query (UI):** Run `app.py` to start the Streamlit UI.
 ---
 
 ## 🔍 Notes
